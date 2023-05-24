@@ -206,25 +206,25 @@ const HomePage =() =>{
             </CustomContainer>
             <ProductCollectionContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerS1}/>
+                    <ProductCard title="pro1" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1}/>
+                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL3}/>
+                    <ProductCard title="pro1" coverUrl={BannerL3} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1}/>
+                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1}/>
+                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1}/>
+                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1}/>
+                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                 </ProductContainer>
             </ProductCollectionContainer>
             
