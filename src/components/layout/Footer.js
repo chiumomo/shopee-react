@@ -13,6 +13,8 @@ import {Row,Col} from 'antd';
 const StyledFooter = styled.footer`
     background-color:#fbfbfb;
     padding:20px 0 ;
+    margin-top: 48px;
+    border-top: 1px solid rgba(0,0,0,.2);
     /* height: 300px; */
 `
 

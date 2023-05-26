@@ -3,12 +3,18 @@ import {Card} from "antd";
 import styled from "styled-components";
 import colorPrimary from "../common/color";
 
+const ProductImageContainer = styled.div`
+    position: relative;
+    box-sizing: border-box;
+    height: 150%;
+    `
+
 const SquareImage = styled.div`
-    padding-top: 100%;
-    background-image: ${props=>`url(${props.url})`} ;
-    background-position: center;
-    background-size: cover;
-    background-color: #caac;
+        padding-top: 100%;
+        background-image: ${props=>`url(${props.url})`} ;
+        background-position: center;
+        background-size: cover;
+    
 `
 
 const ListPriceLabel = styled.span`
@@ -38,8 +44,12 @@ const ProductCard = ({
     return(
     <Card
         hoverable
-        cover={<SquareImage  src={coverUrl} alt="cover" />}
+        cover={
+            <SquareImage url={coverUrl} alt="cover" />
+        }
         >
+        <ProductImageContainer>
+        </ProductImageContainer>
         <Card.Meta 
             title={title}  
             description={

@@ -128,6 +128,7 @@ const ProductCollectionContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 48px;    
+
 `
 
 const ProductContainer= styled.div`
@@ -206,27 +207,111 @@ const HomePage =() =>{
             </CustomContainer>
             <ProductCollectionContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p001" >
+                        <ProductCard title="p001" coverUrl={BannerS2} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p002">
+                        <ProductCard title="p002" coverUrl={BannerS1} listPrices={[]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL3} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p003">
+                        <ProductCard title="p004" coverUrl={BannerS2} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p004">
+                        <ProductCard title="p004" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p005">
+                        <ProductCard title="p005" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p006">
+                        <ProductCard title="p006" coverUrl={BannerL2} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <ProductCard title="pro1" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    <Link style={{textDecoration:"none"}} to="/p007">
+                        <ProductCard title="p007" coverUrl={BannerL3} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p008">
+                        <ProductCard title="p008" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p002">
+                        <ProductCard title="p002" coverUrl={BannerS1} listPrices={[]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p003">
+                        <ProductCard title="p004" coverUrl={BannerS2} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p004">
+                        <ProductCard title="p004" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p005">
+                        <ProductCard title="p005" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p006">
+                        <ProductCard title="p006" coverUrl={BannerL2} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p007">
+                        <ProductCard title="p007" coverUrl={BannerL3} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
+                </ProductContainer>
+                <ProductContainer>
+                    <Link style={{textDecoration:"none"}} to="/p008">
+                        <ProductCard title="p008" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
+                    </Link>
                 </ProductContainer>
             </ProductCollectionContainer>
+
+            <BannerFeatureContainer>
+                <BannerFeature>
+                    <BannerIcon>
+                        <RollbackOutlined style={{color:'white'}}/>
+                    </BannerIcon>
+                    <BannerFeatureContext>
+                        <h4>15天鑑賞期</h4>
+                        <h5>延長買家鑑賞時程</h5>
+                    </BannerFeatureContext>
+                </BannerFeature>
+                <BannerFeature>
+                    <BannerIcon>
+                        <RollbackOutlined style={{color:'white'}}/>
+                    </BannerIcon>
+                    <BannerFeatureContext>
+                        <h4>退貨無負擔</h4>
+                        <h5>物流配合最齊全，讓您安心消費</h5>
+                    </BannerFeatureContext>
+                </BannerFeature>
+                <BannerFeature>
+                    <BannerIcon>
+                        <RollbackOutlined style={{color:'white'}}/>
+                    </BannerIcon>
+                    <BannerFeatureContext>
+                        <h4>假一賠二</h4>
+                        <h5>非正貨賠償承諾</h5>
+                    </BannerFeatureContext>
+                </BannerFeature>
+            </BannerFeatureContainer>
             
         </DefaultLayout>
     )
