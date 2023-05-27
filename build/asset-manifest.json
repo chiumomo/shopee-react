@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shopee-react/static/css/main.dd1ea7b7.css",
+    "main.js": "/shopee-react/static/js/main.2c46ed53.js",
+    "static/js/787.524f7680.chunk.js": "/shopee-react/static/js/787.524f7680.chunk.js",
+    "static/media/bannerL3.jpeg": "/shopee-react/static/media/bannerL3.1ca496d8a3769444a83d.jpeg",
+    "static/media/bannerL2.jpeg": "/shopee-react/static/media/bannerL2.9aeb277752057ffeb10e.jpeg",
+    "static/media/bannerL1.jpeg": "/shopee-react/static/media/bannerL1.240e9c9aca8179e1c43b.jpeg",
+    "static/media/bannerS2.jpeg": "/shopee-react/static/media/bannerS2.b13db7bebd131515809f.jpeg",
+    "static/media/bannerS1.jpeg": "/shopee-react/static/media/bannerS1.c78ff1bcace466b16156.jpeg",
+    "static/media/logo_w.png": "/shopee-react/static/media/logo_w.7a38736cbf13f1551cb4.png",
+    "static/media/cvs_logo.png": "/shopee-react/static/media/cvs_logo.8f1063bfee6ed802d6d6.png",
+    "index.html": "/shopee-react/index.html",
+    "main.dd1ea7b7.css.map": "/shopee-react/static/css/main.dd1ea7b7.css.map",
+    "main.2c46ed53.js.map": "/shopee-react/static/js/main.2c46ed53.js.map",
+    "787.524f7680.chunk.js.map": "/shopee-react/static/js/787.524f7680.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd1ea7b7.css",
+    "static/js/main.2c46ed53.js"
+  ]
+}
