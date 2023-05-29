@@ -192,7 +192,7 @@ const HomePage =() =>{
                     </BannerFeature>
                 </BannerFeatureContainer>
             </BannerBox>
-            <Link to='/advertising'>
+            <Link to='/shopee-react/advertising'>
                 <Image height={120} url={BannerL1} ></Image>
             </Link>
             <CustomContainer>

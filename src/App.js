@@ -23,10 +23,10 @@ const App = () => {
   return <BrowserRouter>
       <ScrollToTop/>
       <Routes>
-        <Route path='/' exact element={<Navigate to='/mall' />} />
-        <Route path='/mall/' exact element={<HomePage/>} />
-        <Route path='/mall/:categoryName' element={<ProductCollectionPage />}/>
-        <Route path='/:productName' element={<ProductPage/>} />
+        <Route path='/shopee-react/' exact element={<Navigate to='/shopee-react/mall' />} />
+        <Route path='/shopee-react/mall/' exact element={<HomePage/>} />
+        <Route path='/shopee-react/mall/:categoryName' element={<ProductCollectionPage />}/>
+        <Route path='/shopee-react/:productName' element={<ProductPage/>} />
         <Route path='/cart' exact element={<CartPage/>} />
         <Route path='/checkout' exact element={<CheckoutPage />}/>
       </Routes>
