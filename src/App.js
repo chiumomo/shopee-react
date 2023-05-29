@@ -15,14 +15,16 @@ import ProductCollectionPage from "./pages/ProductCollectionPage";
 import ProductPage from "./pages/ProductPage";
 
 import 'antd/dist/reset.css';
+import ScrollToTop from "./components/common/ScrollToTop";
 
 
 
 const App = () => {
   return <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' exact element={<Navigate to='/mall' />} />
-        <Route path='/mall' exact element={<HomePage/>} />
+        <Route path='/mall/' exact element={<HomePage/>} />
         <Route path='/mall/:categoryName' element={<ProductCollectionPage />}/>
         <Route path='/:productName' element={<ProductPage/>} />
         <Route path='/cart' exact element={<CartPage/>} />
