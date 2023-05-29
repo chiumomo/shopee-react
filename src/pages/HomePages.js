@@ -207,77 +207,77 @@ const HomePage =() =>{
             </CustomContainer>
             <ProductCollectionContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p001" >
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p001" >
                         <ProductCard title="p001" coverUrl={BannerS2} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p002">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p002">
                         <ProductCard title="p002" coverUrl={BannerS1} listPrices={[]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p003">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p003">
                         <ProductCard title="p004" coverUrl={BannerS2} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p004">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p004">
                         <ProductCard title="p004" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p005">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p005">
                         <ProductCard title="p005" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p006">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p006">
                         <ProductCard title="p006" coverUrl={BannerL2} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p007">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p007">
                         <ProductCard title="p007" coverUrl={BannerL3} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p008">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p008">
                         <ProductCard title="p008" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p002">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p002">
                         <ProductCard title="p002" coverUrl={BannerS1} listPrices={[]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p003">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p003">
                         <ProductCard title="p004" coverUrl={BannerS2} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p004">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p004">
                         <ProductCard title="p004" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p005">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p005">
                         <ProductCard title="p005" coverUrl={BannerL1} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p006">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p006">
                         <ProductCard title="p006" coverUrl={BannerL2} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p007">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p007">
                         <ProductCard title="p007" coverUrl={BannerL3} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>
                 <ProductContainer>
-                    <Link style={{textDecoration:"none"}} to="/p008">
+                    <Link style={{textDecoration:"none"}} to="/shopee-react/p008">
                         <ProductCard title="p008" coverUrl={BannerS1} listPrices={[100,200]} salePrices={[200,299]} />
                     </Link>
                 </ProductContainer>

@@ -61,7 +61,7 @@ const Header =()=>{
             <StyledContainer>
                 <StyledHeaderSection>
                     <StyledNavigator>
-                        <a href="/">蝦皮購物</a>
+                        <a href="/shopee-react">蝦皮購物</a>
                         <a href="#!">下載app</a>
                         <a href="#!">追蹤我們</a>
                         <a href="#!">Blog</a>
@@ -73,14 +73,14 @@ const Header =()=>{
                     </StyledToolBar>
                 </StyledHeaderSection>
                 <StyledHeaderSection>
-                    <Link to="/">
+                    <Link to="/shopee-react">
                         <img src={Logo} height={100} alt="logo" ></img>
                     </Link>
                     <StyledFlex>
                         <StyledInput>
                             <Input.Search placeholder="搜尋產品" allowClear  style={{width:'300'}}  />
                         </StyledInput>
-                        <Link to="/cart">
+                        <Link to="/shopee-react/cart">
                             <ShoppingCartOutlined style={{fontSize:'32px',marginLeft:'10px',color:'#fff'}} />
                         </Link>
                     </StyledFlex>

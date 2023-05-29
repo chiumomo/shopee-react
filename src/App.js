@@ -27,8 +27,8 @@ const App = () => {
         <Route path='/shopee-react/mall/' exact element={<HomePage/>} />
         <Route path='/shopee-react/mall/:categoryName' element={<ProductCollectionPage />}/>
         <Route path='/shopee-react/:productName' element={<ProductPage/>} />
-        <Route path='/cart' exact element={<CartPage/>} />
-        <Route path='/checkout' exact element={<CheckoutPage />}/>
+        <Route path='/shopee-react/cart' exact element={<CartPage/>} />
+        <Route path='/shopee-react/checkout' exact element={<CheckoutPage />}/>
       </Routes>
   </BrowserRouter>
 }
