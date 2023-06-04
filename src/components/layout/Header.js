@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from 'styled-components';
 import StyledContainer from "../common/Container";
 // import headerHeight from "../common/HeaderHeight";
@@ -7,6 +7,7 @@ import colorPrimary from "../common/color";
 import {Input} from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import AuthContext from "../auth/AuthContext.js";
 
 //Search是在Input的模組底下
 //是否fixed與這裡的設定無關
@@ -55,7 +56,8 @@ const StyledInput = styled.div`
     }
 `
 
-const Header =()=>{
+const Header =({className})=>{
+    const {isAuthenticated} = useContext(AuthContext);
     return(
         <StyledHeader>
             <StyledContainer>
@@ -69,12 +71,18 @@ const Header =()=>{
                     <StyledToolBar>
                         <a href="#!" >通知</a>
                         <a href="#!" >幫助中心</a>
-                        <a href="#!" >帳號</a>
+                        {isAuthenticated ?(
+                            <a href="#!" >Username</a>
+                            ):(
+                            <Link to="/shopee-react/login" >登入/註冊</Link>
+                            )
+                        }
+                        {/* <Link to="/shopee-react/login" >Login/Useer</Link> */}
                     </StyledToolBar>
                 </StyledHeaderSection>
                 <StyledHeaderSection>
                     <Link to="/shopee-react">
-                        <img src={Logo} height={100} alt="logo" ></img>
+                        <img src={Logo} height={100} alt="logo" className="w-40" ></img>
                     </Link>
                     <StyledFlex>
                         <StyledInput>
