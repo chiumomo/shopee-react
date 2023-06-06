@@ -57,7 +57,7 @@ const StyledInput = styled.div`
 `
 
 const Header =({className})=>{
-    const {isAuthenticated} = useContext(AuthContext);
+    const {isAuthenticated,logout} = useContext(AuthContext);
     return(
         <StyledHeader>
             <StyledContainer>
@@ -72,12 +72,15 @@ const Header =({className})=>{
                         <a href="#!" >通知</a>
                         <a href="#!" >幫助中心</a>
                         {isAuthenticated ?(
-                            <a href="#!" >Username</a>
+                            <div>
+                                <a href="#!" >user</a>
+                                <span onClick={()=>logout()}>登出</span>
+                            </div>
                             ):(
                             <Link to="/shopee-react/login" >登入/註冊</Link>
                             )
                         }
-                        {/* <Link to="/shopee-react/login" >Login/Useer</Link> */}
+                        
                     </StyledToolBar>
                 </StyledHeaderSection>
                 <StyledHeaderSection>
