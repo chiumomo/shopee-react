@@ -71,7 +71,7 @@ const Header =({className})=>{
                     <StyledToolBar>
                         <a href="#!" >通知</a>
                         <a href="#!" >幫助中心</a>
-                        <a to="/shopee-react/login" >登入/註冊</a>
+                        <Link to="/shopee-react/login" >登入/註冊</Link>
                         {/* {isAuthenticated ?(
                             <div>
                                 <a href="#!" >user</a>
