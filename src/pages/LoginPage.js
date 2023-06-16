@@ -2,7 +2,7 @@ import React from "react";
 import DefaultLayout from "../components/layout/DefaultLayout"
 import styled from "styled-components";
 import Container from "../components/common/Container"
-import LoginForm from "../components/auth/LoginForm";
+// import LoginForm from "../components/auth/LoginForm";
 
 
 const StyledLoginBox= styled.div`
@@ -41,7 +41,7 @@ const LoginPage = ()=> {
                 <StyledLoginContainer>
                     <SpaceBox/>
                     <FormContainer>
-                        <LoginForm/>
+                        {/* <LoginForm/> */}
                     </FormContainer>
                 </StyledLoginContainer>
             </StyledLoginBox>

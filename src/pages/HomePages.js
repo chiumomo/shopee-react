@@ -11,7 +11,7 @@ import BannerS2 from '../images/banner/bannerS2.jpeg';
 import { RightOutlined, RollbackOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/auth/ProductCard.js";
-import AuthContext from "../components/auth/AuthContext.js";
+// import AuthContext from "../components/auth/AuthContext.js";
 
 
 const BannerBox = styled.div`
@@ -143,12 +143,12 @@ const ProductContainer= styled.div`
 `
 
 const HomePage =() =>{
-    const {isAuthenticated} = useContext(AuthContext);
+    // const {isAuthenticated} = useContext(AuthContext);
 
     return(
         <DefaultLayout fixedHeader>
             <StyledClearFix />
-            {isAuthenticated && <h1>welcome back</h1>}
+            {/* {isAuthenticated && <h1>welcome back</h1>} */}
             <BannerBox>
                 <BannerCarouselContainer>
                     <Carousel autoplay>

@@ -18,12 +18,12 @@ import 'antd/dist/reset.css';
 import ScrollToTop from "./components/common/ScrollToTop";
 import LoginPage from "./pages/LoginPage";
 // import AuthContext from "./components/auth/AuthContext";
-import AuthProvider  from "./components/auth/AuthContext";
+// import AuthProvider  from "./components/auth/AuthContext";
 
 
 const App = () => {
   return (
-    <AuthProvider>
+    // <AuthProvider>
       <BrowserRouter>
           <ScrollToTop/>
           <Routes>
@@ -36,7 +36,7 @@ const App = () => {
             <Route path='/shopee-react/login' exact element={<LoginPage/>} />
           </Routes>
       </BrowserRouter>
-    </AuthProvider> 
+    // </AuthProvider> 
   )
 }
 

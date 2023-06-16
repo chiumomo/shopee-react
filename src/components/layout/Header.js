@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+// import React, { useContext } from "react";
 import styled from 'styled-components';
 import StyledContainer from "../common/Container";
 // import headerHeight from "../common/HeaderHeight";
@@ -7,7 +7,7 @@ import colorPrimary from "../common/color";
 import {Input} from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import AuthContext from "../auth/AuthContext.js";
+// import AuthContext from "../auth/AuthContext.js";
 
 //Search是在Input的模組底下
 //是否fixed與這裡的設定無關
@@ -57,7 +57,7 @@ const StyledInput = styled.div`
 `
 
 const Header =({className})=>{
-    const {isAuthenticated,logout} = useContext(AuthContext);
+    // const {isAuthenticated,logout} = useContext(AuthContext);
     return(
         <StyledHeader>
             <StyledContainer>
@@ -71,7 +71,7 @@ const Header =({className})=>{
                     <StyledToolBar>
                         <a href="#!" >通知</a>
                         <a href="#!" >幫助中心</a>
-                        {isAuthenticated ?(
+                        {/* {isAuthenticated ?(
                             <div>
                                 <a href="#!" >user</a>
                                 <span onClick={()=>logout()}>登出</span>
@@ -79,7 +79,7 @@ const Header =({className})=>{
                             ):(
                             <Link to="/shopee-react/login" >登入/註冊</Link>
                             )
-                        }
+                        } */}
                         
                     </StyledToolBar>
                 </StyledHeaderSection>
