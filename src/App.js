@@ -23,7 +23,7 @@ import AuthProvider  from "./components/auth/AuthContext";
 
 const App = () => {
   return (
-    // <AuthProvider>
+    <AuthProvider>
       <BrowserRouter>
           <ScrollToTop/>
           <Routes>
@@ -36,7 +36,7 @@ const App = () => {
             <Route path='/shopee-react/login' exact element={<LoginPage/>} />
           </Routes>
       </BrowserRouter>
-    //</AuthProvider> 
+    </AuthProvider> 
   )
 }
 

@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react"
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Input,Button } from 'antd';
+import { Input,Button, message } from 'antd';
 import { useNavigate } from "react-router-dom";
 import AuthContext from "./AuthContext";
 
 const LoginForm = ()=>{
-    // const Navigate = useNavigate();
+    const Navigate = useNavigate();
     const {login,isAuthenticated} = useContext(AuthContext);
     const [username,setUsername] = useState();
     const [password,setPassword] = useState();
@@ -14,13 +14,17 @@ const LoginForm = ()=>{
         console.log(username,password);
         console.log(isAuthenticated);
         
-        login(username,password);
+        login(username,password).then((token,error)=>{
+            if(!token){
+                message.error(error)
+            }
+        });
         
     };
 
-    // useEffect(()=>{
-        // isAuthenticated && Navigate.push('/')
-    // },[isAuthenticated])
+    useEffect(()=>{
+        isAuthenticated && Navigate.push('/')
+    },[isAuthenticated])
 
     return(
         <div>

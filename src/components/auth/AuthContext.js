@@ -14,19 +14,25 @@ export const AuthProvider = ({children}) => {
     );
 
     useEffect(()=>{
-        const authState =JSON.parse (localStorage.getItem('shopee:auth.state'))
-        if(authState && authState.token){
-            setIsAuthenticated(true);
-        }
-    },[]);
+        try{
+
+            const authState =JSON.parse (localStorage.getItem('shopee:auth.state'))
+            if(authState && authState.token){
+                setIsAuthenticated(true);
+            }
+        }catch{}
+        },[]);
+
+
         const authContextValue = {
             isAuthenticated,
             login: async(username,password) => {
                 if (username === "test" ){
+                    const token= "'good_token'"
                     localStorage.setItem('shopee:auth.state',
                     JSON.stringify({token:'good_token'}))
                     setIsAuthenticated(true);
-                    return{token:'good_token'};
+                    return{token};
                 }else{
                     setIsAuthenticated(false)
                     return{token:null,error:"invalid password"};
@@ -35,7 +41,8 @@ export const AuthProvider = ({children}) => {
                 //const res = await axios ('/login');
             },
             logout: async()=>{
-                setIsAuthenticated(false)
+                setIsAuthenticated(false),
+                localStorage.removeItem('shopee:auth.state');
             }
           };
 
