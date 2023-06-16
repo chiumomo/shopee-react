@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import DefaultLayout from "../components/layout/DefaultLayout";
 import styled from 'styled-components'
 import StyledClearFix from "../components/common/ClearFix";
